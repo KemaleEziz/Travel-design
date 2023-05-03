@@ -137,7 +137,6 @@ section#hero .hero-bottom .input-field {
   display: flex;
   align-items: center;
   padding: 30px;
-  position: absolute;
   height: 88px;
   background: #ffffff;
   border-radius: 12px;
@@ -149,6 +148,7 @@ section#hero .hero-bottom .input-field .nested-field {
   grid-template-rows: 1fr 1fr;
   width: 250px;
   height: 72px;
+  gap: 16px;
 }
 section#hero .hero-bottom .input-field .nested-field:nth-child(1), section#hero .hero-bottom .input-field .nested-field:nth-child(3) {
   width: 300px;
