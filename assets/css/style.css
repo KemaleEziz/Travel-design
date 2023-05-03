@@ -1,9 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+.row{
+    margin-bottom: 50px;
+}
+.card{
+    margin-bottom: 20px ;
+    border: none !important;
+   
+}
+.fa-star{
+    font-size: 8px;
+}
+.east{
+    font-size: 12px;
+    font-weight: 600;
+
+}
+.brooklyn-bridge{
+    font-size: 12px;
+    font-weight: 600;
+}
+.view{
+    display: flex;
+    justify-content: space-between;
+    
 }
 
 .menu-link {
@@ -302,3 +328,4 @@ section#hero .hero-bottom .input-field button {
   border: none;
   margin-left: 5px;
 }
+
