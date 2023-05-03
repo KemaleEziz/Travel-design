@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@300;400;500;600;700&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  list-style-type: none;
 }
 
 body {
@@ -13,7 +15,6 @@ body {
 // hazir classlar
 
 .menu-link {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -21,20 +22,20 @@ body {
   text-transform: capitalize;
   color: #ffffff;
   opacity: 0.7;
+  text-decoration: none !important;
 }
 
 .menu-act {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   text-transform: capitalize;
   color: #ffffff;
+  text-decoration: none !important;
 }
 
 .search-label {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -43,7 +44,6 @@ body {
 }
 
 .search-placeholder {
-  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -64,6 +64,15 @@ section#hero {
   flex-direction: column;
   justify-content: space-between;
 
+  // bootstrap reset
+  p,
+  ul {
+    margin: 0 !important;
+  }
+  * {
+    font-family: "Poppins" !important;
+  }
+
   @media (max-width: 1400px) {
     padding: 73px 100px;
   }
@@ -77,6 +86,10 @@ section#hero {
       display: flex;
       justify-content: space-between;
       gap: 40px;
+
+      a:hover {
+        color: white;
+      }
     }
 
     .menu-user {
@@ -145,8 +158,6 @@ section#hero {
     }
   }
 
- 
-
   .hero-bottom {
     .input-field {
       display: flex;
@@ -157,7 +168,7 @@ section#hero {
       background: #ffffff;
       border-radius: 12px;
       border: 1px solid;
- 
+      // gap: 20px;
 
       .nested-field {
         display: grid;
@@ -165,11 +176,10 @@ section#hero {
         grid-template-rows: 1fr 1fr;
         width: 250px;
         height: 72px;
-        gap: 16px;
 
-        &:nth-child(1),
-        &:nth-child(3) {
+        &:nth-child(1) {
           width: 300px;
+          margin-right: 10px;
         }
 
         img {
@@ -203,6 +213,7 @@ section#hero {
         height: 60px;
         background-color: #7b61ff;
         border-radius: 12px;
+        border: 0;
       }
     }
   }
