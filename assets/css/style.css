@@ -15,194 +15,17 @@
    
 }
 .fa-star{
-    font-size: 8px;
+    font-size: 10px;
 }
 .east{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
 
-}
-.brooklyn-bridge{
-    font-size: 12px;
-    font-weight: 600;
 }
 .view{
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between;  
 }
-
-.menu-link {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: capitalize;
-  color: #ffffff;
-  opacity: 0.7;
-}
-
-.menu-act {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: capitalize;
-  color: #ffffff;
-}
-
-.search-label {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
-  color: #5b5b5b;
-}
-
-.search-placeholder {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #161414;
-}
-
-section#hero {
-  height: 800px;
-  width: 100%;
-  background-size: cover;
-  background-position: bottom;
-  background-image: url("../image/globe-bg.png");
-  background-repeat: no-repeat;
-  padding: 73px 200px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-@media (max-width: 1400px) {
-  section#hero {
-    padding: 73px 100px;
-  }
-}
-section#hero .hero-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-section#hero .hero-top .menu {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-section#hero .hero-top .menu-user {
-  display: flex;
-  gap: 10px;
-}
-section#hero .hero-top .menu-user .menu-user-img {
-  position: relative;
-  cursor: pointer;
-}
-section#hero .hero-top .menu-user .menu-user-img img {
-  border-radius: 50%;
-}
-section#hero .hero-top .menu-user .menu-user-img::after {
-  content: "";
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: red;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-section#hero .hero-top .menu-user .menu-user-text {
-  display: flex;
-  color: white;
-  flex-direction: column;
-  text-align: right;
-}
-section#hero .hero-middle {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-  color: white;
-}
-section#hero .hero-middle h1 {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 62px;
-}
-section#hero .hero-middle button {
-  width: 273px;
-  height: 72px;
-  background: #7b61ff;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  border: 0;
-  cursor: pointer;
-}
-section#hero .hero-middle button span {
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 24px;
-  color: white;
-}
-section#hero .hero-bottom .input-field {
-  display: flex;
-  align-items: center;
-  padding: 30px;
-  height: 88px;
-  background: #ffffff;
-  border-radius: 12px;
-  border: 1px solid;
-}
-section#hero .hero-bottom .input-field .nested-field {
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-  grid-template-rows: 1fr 1fr;
-  width: 250px;
-  height: 72px;
-  gap: 16px;
-}
-section#hero .hero-bottom .input-field .nested-field:nth-child(1),
-section#hero .hero-bottom .input-field .nested-field:nth-child(3) {
-  width: 300px;
-}
-section#hero .hero-bottom .input-field .nested-field img {
-  grid-column: span 1;
-  grid-row: span 2;
-  align-self: center;
-}
-section#hero .hero-bottom .input-field .nested-field span {
-  grid-row: span 1;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
-  color: #5b5b5b;
-  align-self: flex-end;
-}
-section#hero .hero-bottom .input-field .nested-field h4 {
-  grid-row: span 1;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #161414;
-}
-section#hero .hero-bottom .input-field button {
-  width: 60px;
-  height: 60px;
-  background-color: #7b61ff;
-  border-radius: 12px;
-} /*# sourceMappingURL=style.css.map */
 
 .rufet {
   display: flex;
@@ -217,17 +40,13 @@ section#hero .hero-bottom .input-field button {
   color: #161414;
   font-weight: 700 !important;
 }
-.r-02 img {
-  display: flex;
-  justify-content: center;
-}
 
 .r-02 {
   color: #5243c2;
   background: #f6f4ff;
-
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 30px;
   border: 1px solid #5243c2;
   padding: 10px;
@@ -253,34 +72,43 @@ section#hero .hero-bottom .input-field button {
   border-radius: 20px;
 }
 
-.zarangul {
+footer {
   background-color: #f9f9f9;
-  display: flex;
-  justify-content: center;
+  padding-bottom: 20px;
+}
+footer .container {
+  display: flex; 
+  justify-content: space-between;
   flex-wrap: wrap;
-  padding: 30px 100px;
 }
 .z-footer {
-  width: 250px;
+  max-width: 250px;
+  min-width: 200px;
+}
+.z-footer p {
+    margin-top: 20px;
 }
 .z-footer p,
 .z-footer ul li {
   font-family: "Poppins";
   font-weight: 400;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 20px;
   color: #5b5b5b;
 }
 .z-footer h5 {
   font-family: "Poppins";
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 16px;
   line-height: 27px;
   color: #161414;
-  margin-bottom: 20px;
+  margin: 30px 0 20px;
 }
 .z-footer ul li {
   list-style: none;
+}
+.z-footer ul {
+    padding: 0;
 }
 .z-social-icon {
   display: flex;
@@ -292,10 +120,11 @@ section#hero .hero-bottom .input-field button {
   width: 300px;
   height: 36px;
   display: flex;
+  align-items: center;
 }
-.z-footer-email .z-input .z-img img {
-  width: 30px;
-  height: 30px;
+.z-social-icon div img, .z-footer-email .z-input .z-img img{
+  width: 18px;
+  height: 18px;
 }
 .z-footer-email .z-input input {
   width: 80%;
@@ -316,16 +145,13 @@ section#hero .hero-bottom .input-field button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 16px;
-  gap: 8px;
-  width: 36px;
-  height: 36px;
+  width: 20px;
+  height: 20px;
   background: #7b61ff;
-  border-radius: 12px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  border-radius: 5px;
   border: none;
   margin-left: 5px;
 }
-
+.z-footer-email button img {
+    width: 12px;
+}
