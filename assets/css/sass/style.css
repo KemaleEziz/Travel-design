@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.menu-link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #ffffff;
+  opacity: 0.7;
+  text-decoration: none !important;
+}
+
+.menu-act {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none !important;
+}
+
+.search-label {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #5b5b5b;
+}
+
+.search-placeholder {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161414;
+}
+
+section#hero {
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+  background-position: bottom;
+  background-image: url("../../image/globe-bg.png");
+  background-repeat: no-repeat;
+  padding: 73px 200px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+section#hero p,
+section#hero ul {
+  margin: 0 !important;
+}
+section#hero * {
+  font-family: "Poppins" !important;
+}
+@media (max-width: 1400px) {
+  section#hero {
+    padding: 73px 100px;
+  }
+}
+section#hero .hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section#hero .hero-top .menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media (max-width: 1120px) {
+  section#hero .hero-top .menu {
+    gap: 18px;
+  }
+}
+@media (max-width: 992px) {
+  section#hero .hero-top .menu {
+    gap: 5px;
+  }
+}
+section#hero .hero-top .menu a:hover {
+  color: white;
+}
+section#hero .hero-top .menu-user {
+  display: flex;
+}
+section#hero .hero-top .menu-user .menu-user-img {
+  position: relative;
+  cursor: pointer;
+}
+section#hero .hero-top .menu-user .menu-user-img img {
+  border-radius: 50%;
+}
+section#hero .hero-top .menu-user .menu-user-img::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+section#hero .hero-top .menu-user .menu-user-text {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  text-align: right;
+}
+@media (max-width: 992px) {
+  section#hero .hero-top .menu-user .menu-user-text {
+    display: none;
+  }
+}
+section#hero .hero-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  color: white;
+}
+section#hero .hero-middle h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 62px;
+}
+section#hero .hero-middle button {
+  width: 273px;
+  height: 72px;
+  background: #7b61ff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 0;
+  cursor: pointer;
+}
+section#hero .hero-middle button span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+}
+section#hero .hero-bottom .input-field {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  height: 88px;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid;
+}
+section#hero .hero-bottom .input-field .nested-field {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 1fr;
+  width: 250px;
+  height: 72px;
+}
+section#hero .hero-bottom .input-field .nested-field:nth-child(1) {
+  width: 300px;
+  margin-right: 10px;
+}
+section#hero .hero-bottom .input-field .nested-field img {
+  grid-column: span 1;
+  grid-row: span 2;
+  align-self: center;
+}
+section#hero .hero-bottom .input-field .nested-field span {
+  grid-row: span 1;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #5b5b5b;
+  align-self: flex-end;
+}
+section#hero .hero-bottom .input-field .nested-field h4 {
+  grid-row: span 1;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #161414;
+}
+section#hero .hero-bottom .input-field button {
+  width: 60px;
+  height: 60px;
+  background-color: #7b61ff;
+  border-radius: 12px;
+  border: 0;
+}/*# sourceMappingURL=style.css.map */
